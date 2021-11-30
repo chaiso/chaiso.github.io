@@ -18,22 +18,22 @@
     <div class="container font-monospace">
         <div class="row row-cols-1 text-center align-items-center" style="height: 100vh;">
             <div class="col" >
-                <img src="/src/img/logo.png" style="border-radius: 1rem;" height="100px" width="100px" alt="Logo">
-                <h3><b>CHAISO</b></h3>
+                <img class="shadow-sm" src="/src/img/logo.png" style="border-radius: 1rem;" height="150px" width="150px" alt="Logo">
+                <h3 style="padding-top: 10px;"><b>CHAISO</b></h3>
             </div>
             <div class="col">
                 <div class="row">
                     <div class="col-12" style="margin-top: 10px; margin-bottom: 10px;">
-                        <a class="btn btn-success form-control align-middle" href="/src/docs/Catálogo2021.pdf" target="_blank">
+                        <a class="btn btn-success form-control shadow-sm" href="/src/docs/Catálogo2021.pdf">
                             <div class="row align-items-center justify-content-center">
                                 <div class="col-auto"><i class="far fa-file-pdf fa-2x"></i></div>
-                                <div class="col-auto"><div>CATALOGO</div></div>
+                                <div class="col-auto"><div>CATÁLOGO</div></div>
                             </div>
                         </a>
                     </div>
                     <div class="col-12" style="margin-top: 10px; margin-bottom: 10px;">
                         <div class="col">
-                            <a class="btn btn-success form-control" href="https://instagram.com/chaiso_ch?utm_medium=copy_link" target="_blank">
+                            <a class="btn btn-success form-control shadow-sm" href="#">
                                 <div class="row align-items-center justify-content-center">
                                     <div class="col-auto"><i class="fab fa-facebook fa-2x"></i></div>
                                     <div class="col-auto"><div>FACEBOOK</div></div>
@@ -43,7 +43,7 @@
                     </div>
                     <div class="col-12" style="margin-top: 10px; margin-bottom: 10px;">
                         <div class="col">
-                            <a class="btn btn-success form-control" href="https://instagram.com/chaiso_ch?utm_medium=copy_link" target="_blank">
+                            <a class="btn btn-success form-control shadow-sm" href="https://instagram.com/chaiso_ch?utm_medium=copy_link">
                                 <div class="row align-items-center justify-content-center">
                                     <div class="col-auto"><i class="fab fa-instagram fa-2x"></i></div>
                                     <div class="col-auto"><div>INSTAGRAM</div></div>
@@ -53,7 +53,7 @@
                     </div>
                     <div class="col-12" style="margin-top: 10px; margin-bottom: 10px;">
                         <div class="col">
-                            <a class="btn btn-success form-control" href="https://wa.me/+528718020203" target="_blank">
+                            <a class="btn btn-success form-control shadow-sm" href="https://wa.me/+528718020203">
                                 <div class="row align-items-center justify-content-center">
                                     <div class="col-auto"><i class="fab fa-whatsapp fa-2x"></i> </div>
                                     <div class="col-auto"><div>WHATSAPP</div></div>
@@ -65,8 +65,8 @@
             </div>
             
             <div class="col">
-                <a  href="#" onclick="return mapa()" style="text-decoration: none; color: black;">
-                    <i class="fas fa-map-pin fa-2x"></i>
+                <a href="#" onclick="return mapa()" style="text-decoration: none; color: black;">
+                    <i class="fas fa-map-pin fa-2x shadow-lg"></i>
                     <span>UBICACIÓN</span>
                 </a>
             </div>
@@ -82,16 +82,16 @@
 
             // Windows Phone must come first because its UA also contains "Android"
             if (/windows phone/i.test(userAgent)) {
-                window.open('https://goo.gl/maps/tFLSAGmSfRR71eqE7');
+                window.location = 'https://goo.gl/maps/tFLSAGmSfRR71eqE7';
             }
 
             if (/android/i.test(userAgent)) {
-                window.open('https://goo.gl/maps/tFLSAGmSfRR71eqE7');
+                window.location = 'https://goo.gl/maps/tFLSAGmSfRR71eqE7';
             }
 
             // iOS detection from: http://stackoverflow.com/a/9039885/177710
             if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                window.open('https://maps.apple.com/?address=Calle%20Panam%C3%A1,%20Latinoamericana,%2027277%20Torre%C3%B3n,%20COAH,%20Mexico&ll=25.524600,-103.346200&q=Calle%20Panam%C3%A1&_ext=EiYpxfI30CWFOUAxWx1Mk3nWWcA5wZ2DiHKHOUBBoR0hetbVWcBQBA%3D%3D&t=m');
+                window.location = 'https://maps.apple.com/?address=Calle%20Panam%C3%A1,%20Latinoamericana,%2027277%20Torre%C3%B3n,%20COAH,%20Mexico&ll=25.524600,-103.346200&q=Calle%20Panam%C3%A1&_ext=EiYpxfI30CWFOUAxWx1Mk3nWWcA5wZ2DiHKHOUBBoR0hetbVWcBQBA%3D%3D&t=m';
             }
 
             return "unknown";
