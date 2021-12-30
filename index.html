@@ -82,16 +82,16 @@
 
             // Windows Phone must come first because its UA also contains "Android"
             if (/windows phone/i.test(userAgent)) {
-                window.location = 'https://goo.gl/maps/tFLSAGmSfRR71eqE7';
+                window.location = 'https://goo.gl/maps/B8HtUmyEdQkzUD1t7';
             }
 
             if (/android/i.test(userAgent)) {
-                window.location = 'https://goo.gl/maps/tFLSAGmSfRR71eqE7';
+                window.location = 'https://goo.gl/maps/B8HtUmyEdQkzUD1t7';
             }
 
             // iOS detection from: http://stackoverflow.com/a/9039885/177710
             if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                window.location = 'https://maps.apple.com/?address=Calle%20Panam%C3%A1,%20Latinoamericana,%2027277%20Torre%C3%B3n,%20COAH,%20Mexico&ll=25.524600,-103.346200&q=Calle%20Panam%C3%A1&_ext=EiYpxfI30CWFOUAxWx1Mk3nWWcA5wZ2DiHKHOUBBoR0hetbVWcBQBA%3D%3D&t=m';
+                window.location = 'https://maps.apple.com/?address=Calle%20Brasilia%201197,%20Latinoamericana,%2027277%20Torre%C3%B3n,%20COAH,%20Mexico&auid=1091784327292780703&ll=25.524914,-103.346291&lsp=9902&q=Chaiso&_ext=CiwKBQgEEKUBCgQIBRADCgUIBhCfAQoECAoQAAoECFIQAQoECFUQDwoECFkQAhImKRjNJZJAhTlAMQqbPIp71lnAORR4cUqNhzlAQWA87XDY1VnAUAQ%3D&t=m';
             }
 
             return "unknown";
